@@ -4,7 +4,9 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.example.order_20200926.fragments.MyInfoFragment
+import com.example.order_20200926.fragments.QRCodeFragment
 import com.example.order_20200926.fragments.StoreListFragment
+import com.example.order_20200926.fragments.WebViewFragment
 
 class ViewPageAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
 
@@ -13,8 +15,14 @@ class ViewPageAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(f
             0 -> {
                 "피자주문"
             }
-            else -> {
+            1 -> {
                 "내 정보 설정"
+            }
+            2 -> {
+                "QR CODE"
+            }
+            else -> {
+                "네이버"
             }
         }
     }
@@ -24,13 +32,19 @@ class ViewPageAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(f
             0 -> {
                 StoreListFragment()
             }
-            else -> {
+            1 -> {
                 MyInfoFragment()
+            }
+            2 -> {
+                QRCodeFragment()
+            }
+            else -> {
+                WebViewFragment()
             }
         }
     }
 
     override fun getCount(): Int {
-        return 2
+        return 4
     }
 }
