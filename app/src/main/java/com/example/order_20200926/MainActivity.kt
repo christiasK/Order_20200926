@@ -14,7 +14,6 @@ class MainActivity : BaseActivity() {
     }
 
     override fun setEvents() {
-
     }
 
     override fun setValues() {

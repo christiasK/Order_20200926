@@ -11,23 +11,17 @@
         android:id="@+id/mainTabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabIndicatorHeight="3dp"
-        app:tabIndicatorColor="#000000"/>
+        app:tabIndicatorColor="#000000"
+        app:tabIndicatorHeight="3dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#cccccc"/>
+        android:background="#cccccc" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/mainViewPager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#cccccc"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

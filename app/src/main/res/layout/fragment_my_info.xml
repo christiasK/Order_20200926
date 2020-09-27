@@ -17,6 +17,7 @@
         android:layout_marginTop="10dp">
 
         <TextView
+            android:id="@+id/nickName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SDC"
@@ -28,6 +29,7 @@
             android:layout_weight="1"/>
 
         <Button
+            android:id="@+id/changeNickNameBtn"
             android:text="닉네임 변경"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
